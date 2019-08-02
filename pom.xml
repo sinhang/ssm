@@ -34,6 +34,7 @@
     <module>ssm-gateway</module>
     <module>ssm-api</module>
     <module>ssm-web</module>
+    <module>ssm-quartz</module>
   </modules>
 
   <dependencies>

@@ -1,0 +1,12 @@
+server:
+  port: 10091
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}
+  client:
+    healthcheck:
+      enabled: true
+spring:
+  application:
+    name: ssm-quartz

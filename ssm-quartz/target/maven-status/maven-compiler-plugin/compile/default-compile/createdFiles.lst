@@ -1,0 +1,3 @@
+com\he\cron\TestCron.class
+com\he\config\MySchedulingConfig.class
+com\he\QuartzApplication.class
