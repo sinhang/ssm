@@ -16,8 +16,8 @@ spring:
     database: mysql
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://192.168.1.138:3306/shop?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false # 内网服务器
-    username: xm
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false # 内网服务器
+    username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
 #    cache

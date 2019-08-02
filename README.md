@@ -8,7 +8,7 @@
 
 
 #### 安装教程
-
+0. clone下来后第一步是使用IDEA打开此项目，第二部进入终端[View -> To Windows -> Terminal] 然后输入：mvn clean install
 1. 第一步先启动register服务
 2. 第二步启动config服务
 3. 第三步启动gateway服务
