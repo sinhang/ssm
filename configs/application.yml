@@ -1,0 +1,58 @@
+logging:
+  path: ../logs
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+
+security:
+  basic:
+    enabled: true
+  user:
+    name: microservice
+    password: 123456
+
+spring:
+  profiles:
+    active: test
+  datasource:
+    url: jdbc:mysql://192.168.1.250:3306/shop?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false
+    username: xm
+    password: xm188
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    host: 192.168.1.249
+    password: maL1LW188
+    port: 6379
+    database: 0
+    timeout: 0
+    pool:
+      max-active: 100
+      max-wait: 1
+      max-idle: 50
+      min-idle: 0
+
+management:
+  security:
+    enabled: false
+
+#mybatis-plus:
+mybatis-plus:
+  global-config:
+    id-type: 0
+    db-column-underline: false
+    refresh-mapper: true
+  mapper-locations:
+    - classpath*:mapper/*/*Mapper.xml
+  type-aliases-package: com.he.model.*
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: true
+    lazy-loading-enabled: true
+    multiple-result-sets-enabled: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

@@ -1,0 +1,4 @@
+com\he\config\WebAdapter.class
+com\he\controller\IndexController.class
+com\he\WebApplication.class
+com\he\rest\RestController.class

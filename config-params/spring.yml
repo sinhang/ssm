@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: app-name  # 应用名称
+  http:
+    multipart:
+      maxFileSize: 10MB   # 可上传最大文件尺寸
+      maxRequestSize: 10MB  # 可请求最大数据
+  cloud:
+    config:
+      profile: test # 应用环境，通过profile获取应用配置文件
+      label: master # 应用标签，git中的分支
+      discovery:  # 发现配置信息
+        enabled: true # 开启
+        service-id: app-config  # 配置信息管理服务【配置管理服务应用名称】
+      fail-fast: true
+      username: security_username # 配置信息安全账户
+      password: security_password # 配置信息安全密码

@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: ssm-web
+  cloud:
+    config:
+      #      profile: test
+      #      label: master
+      #      discovery:
+      #        enabled: true
+      #        service-id: ssm-config
+      #      fail-fast: true
+      username: ssm_config
+      password: ssm_password
+      uri: http://localhost:8889/
+#server:
+#  context-path: /
+#  servlet-path: /

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ssm-api/ssm-api.iml" filepath="$PROJECT_DIR$/ssm-api/ssm-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-common/ssm-common.iml" filepath="$PROJECT_DIR$/ssm-common/ssm-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-config/ssm-config.iml" filepath="$PROJECT_DIR$/ssm-config/ssm-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-gateway/ssm-gateway.iml" filepath="$PROJECT_DIR$/ssm-gateway/ssm-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-jsp/ssm-jsp.iml" filepath="$PROJECT_DIR$/ssm-jsp/ssm-jsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-parent.iml" filepath="$PROJECT_DIR$/ssm-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-register/ssm-register.iml" filepath="$PROJECT_DIR$/ssm-register/ssm-register.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-web/ssm-web.iml" filepath="$PROJECT_DIR$/ssm-web/ssm-web.iml" />
+    </modules>
+  </component>
+</project>

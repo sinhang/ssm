@@ -1,0 +1,26 @@
+server:
+  port: 8762
+spring:
+  application:
+    name: he-register
+  profiles:
+    active: test
+security:
+  basic:
+    enabled: true
+  user:
+    name: microservice
+    password: 123456
+logging:
+  config: classpath:logback.xml
+eureka:
+  instance:
+    hostname: master
+    instance-id: ${spring.application.name}:${server.port}
+  server:
+    eviction-interval-timer-in-ms: 10000
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${security.user.name}:${security.user.password}@${eureka.instance.hostname}:19999/eureka

@@ -1,0 +1,15 @@
+# http://localhost:8889/ssm-api/dev
+spring:
+  application:
+    name: ssm-api
+  cloud:
+    config:
+#      profile: test
+#      label: master
+#      discovery:
+#        enabled: true
+#        service-id: ssm-config
+      fail-fast: true
+      username: ssm_config
+      password: ssm_password
+      uri: http://localhost:8889/

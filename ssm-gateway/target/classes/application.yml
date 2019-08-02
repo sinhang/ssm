@@ -1,0 +1,56 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: ssm-gateway
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}
+  client:
+    healthcheck:
+      enabled: true
+#    service-url:
+#      defaultZone: http://microservice:123456@localhost:8762/eureka/
+#hystrix:
+#  threadpool:
+#    default:
+#      coreSize: 100 #缺省为10
+#feign.hystrix.enable: true
+#ribbon.ReadTimeout: 60000
+#ribbon.ConnectTimeout: 60000
+#hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 120000
+
+#隔离策略，默认是Thread, 可选THREAD｜SEMAPHORE
+#hystrix.command.default.execution.isolation.strategy: THREAD
+#hystrix.command.default.execution.isolation.strategy.timeoutInMilliseconds: 30000
+#如果并发数达到该设置值，请求会被拒绝和抛出异常并且fallback不会被调用。默认10
+#应用于Hystrix的THREAD和SEMAPHORE策略
+#hystrix.command.default.fallback.isolation.strategy.maxConcurrentRequests: 60000
+# https://www.cnblogs.com/hellxz/p/9282756.html
+zuul:
+  add-proxy-headers: true
+  host:
+    connect-timeout-millis: 120000
+    socket-timeout-millis: 120000
+  routes:
+    intelligensia-authority:
+      sensitiveHeaders: Authorization
+#    traditiional-url:
+#      path: /xxx/**
+#      url: http://localhost:8090/
+#    https://blog.csdn.net/mn960mn/article/details/51832753
+    api:
+      path: /ooo/**
+      service-id: ssm-api
+      # strip-prefix为false时使用http://192.168.1.45:9001/ooo/goods无法访问，当为true时http://192.168.1.45:9001/ooo/goods可以访问
+      strip-prefix: true
+#      semaphore:
+#        maxSemaphores: 5000
+#      path: /ooo/**
+#      service-id: ssm-api
+#      strip-prefix: false
+#      semaphore:
+#        maxSemaphores: 5000
+#    intelligentsia-authority:
+#      sensitiveHeaders: Authorization

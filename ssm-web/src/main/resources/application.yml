@@ -1,0 +1,20 @@
+server:
+  port: 8085
+#  servlet
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}
+  client:
+    healthcheck:
+      enabled: true
+spring.view.prefix: /WEB-INF/
+spring.view.suffix: .jsp
+spring:
+#  view:
+  mvc:
+    view:
+      suffix: .jsp
+      prefix: /WEB-INF/
+  session:
+    store-type: redis

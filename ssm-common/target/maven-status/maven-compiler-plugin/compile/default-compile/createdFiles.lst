@@ -1,0 +1,17 @@
+com\he\CommonApplication.class
+com\he\service\goods\IGoodsService.class
+com\he\config\MyRobbinFooConfig.class
+com\he\model\user\UserAddressModel.class
+com\he\lib\Crypt.class
+com\he\model\user\UserModel.class
+com\he\mapper\user\UserAddressMapper.class
+com\he\mapper\goods\GoodsMapper.class
+com\he\service\user\IUserService.class
+com\he\validate\user\Register.class
+com\he\lib\Response.class
+com\he\service\goods\impl\GoodsServiceImpl.class
+com\he\mapper\user\UserMapper.class
+com\he\service\user\impl\UserServiceImpl.class
+com\he\lib\Validate.class
+com\he\model\goods\GoodsModel.class
+com\he\config\MyBatisPlusConfig.class

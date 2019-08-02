@@ -1,0 +1,3 @@
+com\he\config\WebAdapter.class
+com\he\GatewayApplication.class
+com\he\filter\ErrorFilter.class

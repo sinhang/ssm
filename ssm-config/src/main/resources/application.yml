@@ -1,0 +1,41 @@
+server:
+  port: 8889
+eureka:
+  instance:
+    ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}
+    lease-expiration-duration-in-seconds: 2
+    lease-renewal-interval-in-seconds: 1
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://microservice:123456@localhost:8762/eureka
+spring:
+  application:
+    name: ssm-config
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/repo
+  #        git:
+#          search-paths:
+  #          test:
+#          search-locations: classpath:/configs
+#          dev:
+#            search-locations: classpath:/configs
+  profiles:
+    active: native
+#  profiles:
+#    active: test
+#security:
+#  user:
+#    name: test
+#    password: test
+security:
+#  basic:
+#    enabled: false
+  user:
+    name: ssm_config
+    password: ssm_password

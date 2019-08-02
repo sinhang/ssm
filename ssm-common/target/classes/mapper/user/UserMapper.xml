@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.he.mapper.user.UserMapper">
+    <resultMap id="BaseResultMap" type="com.he.model.user.UserModel">
+        <id column="user_id" property="user_id" />
+        <result column="user_username" property="user_username" />
+    </resultMap>
+    
+    <select id="findByMap" resultMap="BaseResultMap">
+        select * from zr_user where user_id = #{id}
+    </select>
+    
+</mapper>
