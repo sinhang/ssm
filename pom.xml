@@ -25,6 +25,8 @@
     <mybatis.plus.version>2.1.9</mybatis.plus.version>
     <com.alibaba.druid.version>1.1.6</com.alibaba.druid.version>
     <lombok.version>1.16.20</lombok.version>
+    <spring.rabbitmq.version>1.7.4.RELEASE</spring.rabbitmq.version>
+    <amqp.client.version>4.0.3</amqp.client.version>
   </properties>
 
   <modules>
@@ -35,6 +37,7 @@
     <module>ssm-api</module>
     <module>ssm-web</module>
     <module>ssm-quartz</module>
+    <module>ssm-queue</module>
   </modules>
 
   <dependencies>

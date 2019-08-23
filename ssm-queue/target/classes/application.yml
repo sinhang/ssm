@@ -1,0 +1,36 @@
+server:
+  port: 10099
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}
+  client:
+    healthcheck:
+      enabled: true
+spring:
+  application:
+    name: ssm-queue
+  rabbitmq:
+    username: it01
+    password: it188
+    host: 192.168.1.133
+    listener:
+      simple:
+        acknowledge-mode: manual
+        concurrency: 1
+        max-concurrency: 10
+        prefetch: 1
+    cache:
+      channel:
+        size: 50
+        checkout-timeout: 3000
+    virtual-host: /
+    publisher-confirms: true
+    publisher-returns: true
+    template:
+      mandatory: true
+### 自定义配置
+mq:
+  defaultExchange: amqpExchange # 默认交换器
+  queue: queue # 队列名
+  routeKey: queue_key # 路由key

@@ -1,0 +1,27 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.he.component.RabbitMQComponent",
+      "name": "mq",
+      "type": "com.he.component.RabbitMQComponent"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.he.component.RabbitMQComponent",
+      "name": "mq.default-exchange",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.he.component.RabbitMQComponent",
+      "name": "mq.queue",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.he.component.RabbitMQComponent",
+      "name": "mq.route-key",
+      "type": "java.lang.String"
+    }
+  ]
+}

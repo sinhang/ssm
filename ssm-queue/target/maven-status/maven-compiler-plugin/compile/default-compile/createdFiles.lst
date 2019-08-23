@@ -1,0 +1,14 @@
+com\he\consumption\TestConsumption.class
+META-INF\spring-configuration-metadata.json
+com\he\config\RabbitMQConfig.class
+com\he\producer\TestProducer.class
+com\he\component\RabbitMQComponent.class
+com\he\service\ITestService.class
+com\he\consumption\MQConsumption.class
+com\he\QueueApplication.class
+com\he\service\impl\TestImpl.class
+com\he\utils\mq\RabbitMQUtil.class
+com\he\service\impl\MQProducerImpl.class
+com\he\producer\Test1Producer.class
+com\he\service\IMQProducerService.class
+com\he\utils\mq\MQMessage.class

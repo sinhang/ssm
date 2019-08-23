@@ -1,0 +1,13 @@
+D:\java\ssm\ssm-queue\src\main\java\com\he\service\impl\TestImpl.java
+D:\java\ssm\ssm-queue\src\main\java\com\he\utils\mq\RabbitMQUtil.java
+D:\java\ssm\ssm-queue\src\main\java\com\he\service\IMQProducerService.java
+D:\java\ssm\ssm-queue\src\main\java\com\he\config\RabbitMQConfig.java
+D:\java\ssm\ssm-queue\src\main\java\com\he\service\ITestService.java
+D:\java\ssm\ssm-queue\src\main\java\com\he\consumption\MQConsumption.java
+D:\java\ssm\ssm-queue\src\main\java\com\he\component\RabbitMQComponent.java
+D:\java\ssm\ssm-queue\src\main\java\com\he\consumption\TestConsumption.java
+D:\java\ssm\ssm-queue\src\main\java\com\he\producer\Test1Producer.java
+D:\java\ssm\ssm-queue\src\main\java\com\he\utils\mq\MQMessage.java
+D:\java\ssm\ssm-queue\src\main\java\com\he\QueueApplication.java
+D:\java\ssm\ssm-queue\src\main\java\com\he\producer\TestProducer.java
+D:\java\ssm\ssm-queue\src\main\java\com\he\service\impl\MQProducerImpl.java
