@@ -21,7 +21,7 @@
     <spring.boot.version>1.5.9.RELEASE</spring.boot.version>
     <io.springfox.version>2.7.0</io.springfox.version>
     <com.alibaba.version>1.2.44</com.alibaba.version>
-    <mysql.connecter.version>5.1.38</mysql.connecter.version>
+    <mysql.connecter.version>8.0.28</mysql.connecter.version>
     <mybatis.plus.version>2.1.9</mybatis.plus.version>
     <com.alibaba.druid.version>1.1.6</com.alibaba.druid.version>
     <lombok.version>1.16.20</lombok.version>
